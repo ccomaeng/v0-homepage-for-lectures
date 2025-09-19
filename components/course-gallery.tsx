@@ -165,7 +165,17 @@ export function CourseGallery() {
               </CardContent>
 
               <CardFooter className="p-6 pt-0">
-                <Button className="w-full group-hover:bg-primary/90 transition-colors">강의 상세보기</Button>
+                <div className="flex gap-3 w-full">
+                  <Button
+                    variant="outline"
+                    className="flex-1 group-hover:border-primary/50 transition-colors bg-transparent"
+                  >
+                    강의 상세보기
+                  </Button>
+                  <Button className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-colors">
+                    즉시 결제
+                  </Button>
+                </div>
               </CardFooter>
             </Card>
           ))}
